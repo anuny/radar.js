@@ -1,0 +1,25 @@
+{
+  "name": "sucker",
+  "version": "1.0.0",
+  "description": "A Module Loader for the Web",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [
+    "nodejs",
+    "amd",
+    "gulp"
+  ],
+  "author": "Anuny",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:anuny/sucker.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}
