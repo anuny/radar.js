@@ -1,5 +1,13 @@
-define("extend::dom",function() {
-	var w = window,
+(function (window, factory) {
+	 if (typeof exports === 'object') {
+		  module.exports = factory();
+	 } else if (typeof define === 'function' && define.amd) {
+		  define(factory);
+	 } else {
+		  window.eventUtil = factory();
+	 }
+})(this, function () {
+	 var w = window,
 	doc = w.document,
 	handlerMap = {},
 	parentsExp = /(?:[\w\-\\.#]+)+(?:\[\w+?=([\'"])?(?:\\\1|.)+?\1\])?|\*|>/gi,
@@ -285,5 +293,5 @@ define("extend::dom",function() {
 		return makeArray(ele)
 	}
 	dom.fn.init.prototype = dom.fn;
-	return dom
+	window.radar = dom;
 });
