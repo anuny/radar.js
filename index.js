@@ -1,4 +1,3 @@
-define("extend::dom",function() {
 	var w = window,
 	doc = w.document,
 	handlerMap = {},
@@ -285,5 +284,4 @@ define("extend::dom",function() {
 		return makeArray(ele)
 	}
 	dom.fn.init.prototype = dom.fn;
-	return dom
-});
+	module.exports = dom;
